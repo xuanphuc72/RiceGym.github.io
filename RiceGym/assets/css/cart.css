@@ -1,0 +1,151 @@
+/* Định dạng tổng thể cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #000;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+  
+  /* Bố cục chính */
+  .container {
+    width: 80%;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Tiêu đề giỏ hàng */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Bảng hiển thị giỏ hàng */
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table th, .cart-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .cart-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Ảnh sản phẩm */
+  .cart-table img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Input số lượng */
+  .quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  /* Nút xóa */
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+  /* Tổng tiền */
+  .total-price {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Nút thanh toán */
+  .checkout-btn {
+    display: block;
+    width: 100%;
+    background-color: #27ae60;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #219150;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    .cart-table th, .cart-table td {
+      padding: 8px;
+    }
+  
+    .cart-table img {
+      width: 60px;
+    }
+  }
+  

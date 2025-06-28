@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Định dạng thanh nav */
+.navbar {
+    position: fixed;  /* Cố định trên cùng khi cuộn */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Màu đen trong suốt */
+    backdrop-filter: blur(5px); /* Hiệu ứng mờ nền */
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Định dạng menu */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Hover màu đỏ */
+.nav-menu li a:hover {
+    color: red;
+}
+
+/* Icon giỏ hàng */
+.cart-icon {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.cart-icon:hover {
+    transform: scale(1.2); /* Hiệu ứng zoom */
+    color: red;
+}
+
+/* Định dạng nút Login */
+.login-btn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-left: 2px solid white;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    color: red;
+}
+.nav{
+    background-image: linear-gradient(
+      to right,
+      rgba(150, 246, 144, 0.2),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("../image/header.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: 50px 50px;
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">TRAINER</a></li>
+            <li><a href="#">CLIENT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#" class="cart-icon">🛒</a></li>
+            <li><a href="#" class="login-btn">LOGIN</a></li>
+        </ul>
+    </header>
+    <div class="nav">
+        <h1>asd</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="/assets/css/cart.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/shop.css">
+</head>
+<body>
+  <nav>
+    <div class="nav__bar">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html"><img src="./assets/image/logoicon.png" alt="logo" /></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#trainer">TRAINER</a></li>
+        <li><a href="#client">CLIENT</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="cart.html" target="page"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        <li class="separator"></li>
+        <li><a href="login.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1> Your cart </h1>
+    <a href="shop.html"><h4 style="color: rgb(115, 204, 110);">Back Shop</h4></a>
+  </header>
+
+  <section class="cart">
+      <table>
+          <thead>
+              <tr>
+                  <th>Sản phẩm</th>
+                  <th>Giá</th>
+                  <th>Số lượng</th>
+                  <th>Thành tiền</th>
+                  <th>Xóa</th>
+              </tr>
+          </thead>
+          <tbody id="cart-items">
+              <!-- Sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+          </tbody>
+      </table>
+      <h3>Tổng tiền: $<span id="total-price">0</span></h3>
+      <button onclick="clearCart()">Xóa giỏ hàng</button>
+      <button onclick="checkout()">Thanh toán</button>
+  </section>
+
+
+  <footer class="footer" id="contact">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="assets/image/logoicon.png" alt="logo" /></a>
+        </div>
+        <p>
+          Welcome to RICEGYM, where we believe that every journey to
+          fitness is unique and empowering.
+        </p>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              116 Dong Den Street, Tan Binh District.</a>
+          </li>
+          <li>
+            <a href="#"><span><i class="ri-phone-fill"></i></span>+0833123456
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-fill"></i></span>rice@123.comm</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>GALLERY</h4>
+        <div class="gallery__grid">
+          <img src="/assets/image/banner-1.png" alt="banner" />
+          <img src="/assets/image/banner-2.png" alt="banner" />
+          <img src="/assets/image/banner-3.png" alt="banner" />
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>NEWSLETTER</h4>
+        <p>
+          Don't miss out on the latest news and offers - sign up today and
+          join our thriving fitness community!
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Enter Email" />
+          <button class="btn btn__primary">SEND</button>
+        </form>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">RICE</div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/cart.js"></script>
+  <script src="/js/sh.js"></script>
+</body>
+</html>
